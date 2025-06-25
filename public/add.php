@@ -84,7 +84,7 @@ require '../core/func.php';
 
 $r = json_decode(file_get_contents('php://input'), true);
 // dump($r);
-$query = $r['query'];
+// $query = $r['query'];
 $number = $r['number'];
 
 
@@ -101,7 +101,7 @@ $number = $r['number'];
         // dump($data);
 
         header('Content-Type:application/json', true, 211);
-        print json_encode(['msg' => 'success', 'q' => $query, 'n' => $number,'data'=>$data]);
+        print json_encode(['msg' => 'success', 'n' => $number,'data'=>$data]);
     } else {
         header('Content-Type:application/json', true, 451);
         print json_encode(['msg' => 'error']);

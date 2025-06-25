@@ -17,7 +17,10 @@ require '../core/func.php';
 
 <body>
     <h1>hello alex</h1>
-    <button class="btn btn-info">enter</button>
+    <div class="box d-flex">
+        <input type="text" placeholder="enter 8787" class="form-control input" value="8787">
+        <button class="btn btn-info">enter</button>
+    </div>
 
     <!-- spiner -->
     <div class="spinhide hide">
